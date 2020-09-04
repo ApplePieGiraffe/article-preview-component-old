@@ -25,6 +25,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -97,3 +98,16 @@ body {
         border-radius: 50%; }
         .card__content__footer .share:hover {
           background-color: rgba(158, 175, 194, 0.37); }
+
+.attribution {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 11px;
+  text-align: center; }
+  @media only screen and (max-width: 900px) {
+    .attribution {
+      writing-mode: vertical-lr;
+      top: 0%;
+      right: 5rem; } }
+  .attribution a {
+    color: #3e52a3; }

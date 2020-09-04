@@ -31,6 +31,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -130,5 +131,21 @@ body {
                 }
             }
         }
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5rem;
+    font-size: 11px; text-align: center;
+
+    @media only screen and (max-width: 900px) {
+        writing-mode: vertical-lr;
+        top: 0%;
+        right: 5rem;
+    }
+
+	a { 
+        color: hsl(228, 45%, 44%); 
     }
 }
